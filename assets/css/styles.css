@@ -1,0 +1,218 @@
+html, body {
+    height: 100%;
+    font:1em/1.3em FavoritC, Arial, Tahoma, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-image:linear-gradient(to bottom, #222224, #1c242e); 
+
+}
+
+
+.shapka img {width: 100%;
+            height: 100%;}
+.block img {width: 100%;
+            height: 100%;}
+.o-nas img {width: 100%;
+            height: 100%;}
+
+.main{
+				border: 1px solid #ccc; 
+				display: flex;  
+                max-width: 1000px;
+                min-width: 250px;
+                margin: auto;
+/*                justify-content: center; */
+                align-items: stretch;
+                align-content: stretch;
+                flex-flow: row wrap;
+                }
+
+h2 {
+    color: white;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-weight: normal; 
+    font-size: 1.2em;
+}
+
+.bl{
+                flex: 1 1 1000px; 
+                text-align: center;
+                display: flex;
+                flex-flow: row wrap;
+            }
+
+/*Меню*/
+
+.menu {
+    flex: 1 1 100%; 
+    margin-top: -15px;
+    vertical-align: middle; 
+    justify-content: space-around;
+	border: none;
+    display: flex;
+    flex-flow: row wrap;
+    }
+
+.button {
+    display: flex;
+    transition: 0.7s;
+    height: 135%;
+    background-image: url(../images/buttons/button.png);
+    color: white;
+    justify-content: space-around;
+    width: 25%;
+    background-position: top center;
+    background-repeat: no-repeat;    
+}
+
+
+
+.button:hover{
+    background-image: url(../images/buttons/button2.png);
+}
+
+/*Блоки новостей*/
+
+.news {
+    flex: 1 1 100%; 
+    margin-top: 20px;
+    vertical-align: middle; 
+	border: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.block {display: flex;
+    border: solid 1px #918f8f;
+    flex: 1 1 20%; 
+    color: white;
+     
+}
+
+.plash {
+    display:flex;
+    
+}
+
+/*Карусель*/
+
+.karusel {
+    margin-top: 10px;
+    flex: 1 1 100%; 
+    vertical-align: middle; 
+	display: flex;
+    flex-flow: row wrap;
+    
+    }
+
+.hit {display: flex;
+    border: solid 1px #918f8f;
+    height: 180px;
+    width: 186px;
+    color: white;
+    background-size:100% 100%;
+    background-repeat: no-repeat;    
+}
+
+.str {display: flex;
+    height: 180px;
+    width: 30px;
+    color: white;   
+    align-items:center;
+    justify-content:center;}
+
+/*О нас*/
+
+.o-nas {
+    flex: 1 1 100%; 
+    margin-top: 15px;
+    vertical-align: middle; 
+	border-top: solid 1px white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    }
+
+.photo {
+    border: solid 5px white;
+    margin-left: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex: 1 1 30%;
+}
+
+.o-nas-t {
+    display: flex;
+    flex: 1 1 60%;
+    color: white;
+    margin: 10px;
+    flex-flow: row wrap;
+    font-weight: normal; 
+    
+    
+}
+
+h3 {font-weight: normal; 
+    font-size: 1.2em;
+    display: flex;
+    flex: 1 1 100%;
+    }
+.onas {display: flex;
+    flex: 1 1 100%;}
+
+/*Подвал*/
+
+.footer {
+    flex: 1 1 100%; 
+    margin-top: 15px;
+    vertical-align: middle; 
+	border-top: solid 1px white;
+    background-color: #222224;
+    height: 160px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    color: white;
+    font-weight: lighter; 
+    }
+
+.footer-l{
+ margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex: 1 1 30%;  
+    height: 82px;
+
+}
+
+.footer-c{
+ margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    
+    flex: 1 1 30%;   
+
+}
+.footer-r{
+ margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex: 1 1 30%;   
+
+}
+
+
+
+@font-face {
+font-family: "FavoritC"; 
+src: url("../fonts/FavoritC.ttf"); 
+font-style: normal; 
+font-weight: normal; 
+} 
