@@ -87,7 +87,7 @@ dt {
     flex-flow: row nowrap;
     color: white;
     background-image: url(../images/shapka/kuat-head.png);
-    background-size: 112vmin;
+    background-size: 100%;
     background-repeat: no-repeat;
     height: 25vmin;
 
