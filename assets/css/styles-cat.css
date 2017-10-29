@@ -145,9 +145,31 @@ dt {
     background-image: url(../images/buttons/button2.png);
 }
 
+.button-press {
+    display: flex;
+    transition: 0.7s;
+    height: 70px;
+    background-image: url(../images/buttons/button2.png);
+    color: white;
+    justify-content: space-around;
+    width: 25%;
+    text-align: center;
+    background-position: top center;
+    background-repeat: no-repeat;
+    
+}
+
+.cat-name {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: center;
+    
+}
+
+
 /*Блоки новостей*/
 
-.news {
+.prod {
     flex: 1 1 100%;
     margin-top: 5px;
     vertical-align: middle;
@@ -162,25 +184,72 @@ dt {
     border: solid 1px #918f8f;
     color: white;
     display: flex;
-    flex: 1 1 30%;
+    flex: 1 1 20%;
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 32vmin;
+    height: 25vmin;
     align-items: flex-end;
+    margin: 3px;
 
 }
 
 .bn1 {
-    background-image: url(../images/news/1.png);
+    background-image: url(../images/tovary/sl1.png);
 }
 
 .bn2 {
-    background-image: url(../images/news/2.png);
+    background-image: url(../images/tovary/sl2.png);
 }
 
 .bn3 {
-    background-image: url(../images/news/3.png);
+    background-image: url(../images/tovary/sl3.png);
 }
+
+.bn4 {
+    background-image: url(../images/tovary/sl4.png);
+}
+
+.bn5 {
+    background-image: url(../images/tovary/sl5.png);
+}
+
+.bn6 {
+    background-image: url(../images/tovary/sl6.png);
+}
+
+.bn7 {
+    background-image: url(../images/tovary/sl7.png);
+}
+
+.bn8 {
+    background-image: url(../images/tovary/sl8.png);
+}
+
+.bn9 {
+    background-image: url(../images/tovary/sl9.png);
+}
+
+.bn10 {
+    background-image: url(../images/tovary/sl10.png);
+}
+
+.bn11 {
+    background-image: url(../images/tovary/sl11.png);
+}
+
+.bn12 {
+    background-image: url(../images/tovary/sl12.png);
+}
+
+.bn13 {
+    background-image: url(../images/tovary/sl13.png);
+}
+
+.bn14 {
+    background-image: url(../images/tovary/sl14.png);
+}
+
+
 
 
 
@@ -207,53 +276,6 @@ dt {
     background-color: rgba(255, 255, 255, 0.4);
     text-shadow: 2px 2px 1px black;
 }
-
-
-
-/*Карусель*/
-
-/*Стили для слайдера*/
-
-.karusel {
-    max-width: 85vw;
-    margin: 10px auto;
-}
-
-.sl__slide {
-    position: relative;
-    border: solid 1px white;
-    margin: 0 2px;
-
-}
-
-.sl__text {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /*    height: 20px;*/
-    color: #fff;
-    background: rgba(255, 255, 255, 0.1);
-    text-align: center;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    padding: 0px 0;
-}
-
-.sl__zag,
-sl__desc {
-    margin: 0;
-    padding: 0 10px;
-}
-
-.sl {
-    max-width: 930px
-}
-
-.sl__img {
-    width: 100%;
-}
-
-
-
 
 
 
@@ -415,7 +437,7 @@ h3 {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
 
     .plash {
         height: 18vmin;
