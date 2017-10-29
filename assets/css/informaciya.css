@@ -5,6 +5,7 @@ body {
 }
 
 body {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#222224), to(#1c242e));
     background-image: linear-gradient(to bottom, #222224, #1c242e);
 
 }
@@ -33,13 +34,21 @@ a {
 
 .main {
     border: 1px solid #ccc;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 1000px;
     min-width: 250px;
     margin: auto;
     /*                justify-content: center; */
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
     align-items: stretch;
+    -ms-flex-line-pack: stretch;
     align-content: stretch;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
 }
 
@@ -66,8 +75,15 @@ dt {
 /*Шапка*/
 
 .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
     flex: 1 1 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
     color: white;
     background-image: url(../images/shapka/kuat-head.png);
@@ -78,11 +94,19 @@ dt {
 }
 
 .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40%;
     flex: 1 1 40%;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     margin-top: 30px;
     margin-left: 30px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
 
 }
@@ -92,12 +116,23 @@ dt {
 }
 
 .gala {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40%;
     flex: 1 1 40%;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     margin-top: 30px;
     margin-right: 30px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     font-size: 0.9em;
 }
@@ -108,21 +143,33 @@ dt {
 /*Меню*/
 
 .menu {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
     flex: 1 1 100%;
     /*    margin-top: -15px;*/
     vertical-align: middle;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
 }
 
 .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-transition: 0.7s;
     transition: 0.7s;
     height: 70px;
     background-image: url(../images/buttons/button.png);
     color: white;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     width: 25%;
     text-align: center;
@@ -139,25 +186,43 @@ dt {
 /*Блоки новостей*/
 
 .inform {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
     flex: 1 1 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
-   
-    
+
+
 }
 
 .news1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
     flex: 1 1 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     border: solid 1px white;
-    
+
 }
 
 .news_image {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 20%;
     flex: 1 1 20%;
-    
+
     background-size: 100%;
     height: 20vmin;
     background-repeat: no-repeat;
@@ -166,36 +231,59 @@ dt {
 .news_image_1 {
     background-image: url(../images/news/1.png);
 }
+
 .news_image_2 {
     background-image: url(../images/news/2.png);
 }
+
 .news_image_3 {
     background-image: url(../images/news/3.png);
 }
 
 .news_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 70%;
     flex: 1 1 70%;
     color: white;
     padding: 10px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
-    
+
 }
 
 .news_p {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
     flex: 1 1 100%;
 }
 
 .news_zag {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
     flex: 1 1 100%;
     font-size: 1.2em;
 }
 
 .podrobnee {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
     flex: 1 1 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     padding-right: 10px;
 }
@@ -205,14 +293,23 @@ dt {
 /*Подвал*/
 
 .footer {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
     flex: 1 1 100%;
     margin-top: 15px;
     vertical-align: middle;
     border-top: solid 1px white;
     background-color: #222224;
     height: 160px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     color: white;
     font-weight: lighter;
@@ -223,7 +320,11 @@ dt {
     margin-left: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 25%;
     flex: 1 1 25%;
     height: 82px;
 
@@ -233,7 +334,11 @@ dt {
     margin-left: 60px;
     margin-top: 30px;
     margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 25%;
     flex: 1 1 25%;
 
 
@@ -242,9 +347,17 @@ dt {
 .footer-r {
     margin-top: 30px;
     margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 25%;
     flex: 1 1 25%;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     margin-right: 30px;
 
@@ -304,6 +417,10 @@ dt {
 
     .footer-r {
 
+        -webkit-box-flex: 1;
+
+        -ms-flex: 1 1 100%;
+
         flex: 1 1 100%;
         margin: 0 0 0 30px;
     }
@@ -330,6 +447,8 @@ dt {
     }
 
     .logo {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
         flex: 1 1 100%;
     }
 
@@ -337,14 +456,16 @@ dt {
 
 @media screen and (max-width: 530px) {
 
-    .news_image{
+    .news_image {
         visibility: collapse;
-        }
+    }
 
-    .news_text{
+    .news_text {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
         flex: 1 1 100%;
     }
-    
+
     .button {
         width: 50%;
 
@@ -352,20 +473,32 @@ dt {
 
     .footer-c {
 
+        -webkit-box-flex: 1;
+
+        -ms-flex: 1 1 100%;
+
         flex: 1 1 100%;
         margin: 0 0 0 30px;
     }
 
     .footer-l {
         margin-left: 30px;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
         flex: 1 1 100%;
 
 
     }
     .footer {
 
-        height: 380px;
+        height: 390px;
+        width: 250px;
     }
 
+
+    .footerlogo {
+        height: 74px;
+        width: 260px;
+    }
 
 }

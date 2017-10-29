@@ -5,6 +5,7 @@ body {
 }
 
 body {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#222224), to(#1c242e));
     background-image: linear-gradient(to bottom, #222224, #1c242e);
 
 }
@@ -42,13 +43,21 @@ a {
 
 .main {
     border: 1px solid #ccc;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 1000px;
     min-width: 250px;
     margin: auto;
     /*                justify-content: center; */
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
     align-items: stretch;
+    -ms-flex-line-pack: stretch;
     align-content: stretch;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
 }
 
@@ -75,8 +84,15 @@ dt {
 /*Шапка*/
 
 .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
     flex: 1 1 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
     color: white;
     background-image: url(../images/shapka/kuat-head.png);
@@ -87,11 +103,19 @@ dt {
 }
 
 .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40%;
     flex: 1 1 40%;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     margin-top: 30px;
     margin-left: 30px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
 
 }
@@ -101,12 +125,23 @@ dt {
 }
 
 .gala {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40%;
     flex: 1 1 40%;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     margin-top: 30px;
     margin-right: 30px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     font-size: 0.9em;
 }
@@ -117,21 +152,33 @@ dt {
 /*Меню*/
 
 .menu {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
     flex: 1 1 100%;
     /*    margin-top: -15px;*/
     vertical-align: middle;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
 }
 
 .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-transition: 0.7s;
     transition: 0.7s;
     height: 70px;
     background-image: url(../images/buttons/button.png);
     color: white;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     width: 25%;
     text-align: center;
@@ -148,24 +195,38 @@ dt {
 /*Блоки новостей*/
 
 .news {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
     flex: 1 1 100%;
     margin-top: 5px;
     vertical-align: middle;
     border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
 .block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     border: solid 1px #918f8f;
     color: white;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 30%;
     flex: 1 1 30%;
     background-size: 100%;
     background-repeat: no-repeat;
     height: 32vmin;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
 
 }
@@ -186,10 +247,15 @@ dt {
 
 
 .plash {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
     flex: 1 1 100%;
     background-color: rgba(255, 255, 255, 0.2);
     height: 10vmin;
+    -webkit-transition: 1.2s;
     transition: 1.2s;
     color: white;
     padding-left: 10px;
@@ -261,12 +327,21 @@ sl__desc {
 /*О нас*/
 
 .o-nas {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
     flex: 1 1 100%;
     margin-top: 15px;
     vertical-align: middle;
     border-top: solid 1px white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
 }
 
@@ -275,15 +350,26 @@ sl__desc {
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 25%;
     flex: 1 1 25%;
 }
 
 .o-nas-t {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 60%;
     flex: 1 1 60%;
     color: white;
     margin: 10px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     font-weight: normal;
     text-align: justify;
@@ -296,26 +382,43 @@ sl__desc {
 h3 {
     font-weight: normal;
     font-size: 1.2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
     flex: 1 1 100%;
 }
 
 .onas {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
     flex: 1 1 100%;
 }
 
 /*Подвал*/
 
 .footer {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
     flex: 1 1 100%;
     margin-top: 15px;
     vertical-align: middle;
     border-top: solid 1px white;
     background-color: #222224;
     height: 160px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     color: white;
     font-weight: lighter;
@@ -326,7 +429,11 @@ h3 {
     margin-left: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 25%;
     flex: 1 1 25%;
     height: 82px;
 
@@ -336,7 +443,11 @@ h3 {
     margin-left: 60px;
     margin-top: 30px;
     margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 25%;
     flex: 1 1 25%;
 
 
@@ -345,9 +456,17 @@ h3 {
 .footer-r {
     margin-top: 30px;
     margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 25%;
     flex: 1 1 25%;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     margin-right: 30px;
 
@@ -407,6 +526,10 @@ h3 {
 
     .footer-r {
 
+        -webkit-box-flex: 1;
+
+        -ms-flex: 1 1 100%;
+
         flex: 1 1 100%;
         margin: 0 0 0 30px;
     }
@@ -433,6 +556,8 @@ h3 {
     }
 
     .logo {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
         flex: 1 1 100%;
     }
 
@@ -441,6 +566,8 @@ h3 {
 @media screen and (max-width: 530px) {
 
     .block {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
         flex: 1 1 100%;
         height: 65vmin;
 
@@ -453,20 +580,32 @@ h3 {
 
     .footer-c {
 
+        -webkit-box-flex: 1;
+
+        -ms-flex: 1 1 100%;
+
         flex: 1 1 100%;
         margin: 0 0 0 30px;
     }
 
     .footer-l {
         margin-left: 30px;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
         flex: 1 1 100%;
 
 
     }
     .footer {
 
-        height: 380px;
+        height: 390px;
+        width: 250px;
     }
 
+
+    .footerlogo {
+        height: 74px;
+        width: 260px;
+    }
 
 }
