@@ -160,6 +160,7 @@ dt {
 .news {
     flex: 1 1 100%;
     margin-top: 5px;
+    margin-bottom: 50px;
     vertical-align: middle;
     border: none;
     display: flex;
@@ -249,6 +250,13 @@ sl__desc {
     background-image: url(../images/tovary/card/1/akklamator1.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+    
+}
+
+.news-image-centre {
+    justify-content: center;
+    display: flex;
+    flex: 1 1 100%;
     
 }
 
