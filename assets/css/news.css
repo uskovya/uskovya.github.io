@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "FavoritC";
+    src: url("../fonts/FavoritC.eot");
+    font-style: normal;
+    font-weight: normal;
+}
+
 html,
 body {
     height: 100%;
@@ -369,12 +376,7 @@ dt {
 
 /*Звездное небо - фон*/
 
-@font-face {
-    font-family: "FavoritC";
-    src: url("../fonts/FavoritC.eot");
-    font-style: normal;
-    font-weight: normal;
-}
+
 
 
 .background {
